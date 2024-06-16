@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro | Projeto UX</title>
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/registration.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <header class="header">
+        <div class="logo-wrapper">
+          <img
+            class="logo"
+            src="./assets/logo-catolica.png"
+            alt="Universidade Católica de Brasília - UCB" />
+        </div>
+        <h1 class="title">Allan Julie Fontes de Oliveira</h1>
+      </header>
+      <div class="form-wrapper">
+        <form>
+          <h1 class="form-title">Formulário</h1>
+          <div class="form-section">
+            <h3 class="subtitle section-title">Dados pessoais</h3>
+            <div class="input-wrapper">
+              <label for="name">Nome</label>
+              <input class="form-input" type="text" id="name" name="name" />
+            </div>
+            <div class="input-wrapper">
+              <label for="address">Endereço</label>
+              <input
+                class="form-input"
+                type="text"
+                id="address"
+                name="address" />
+            </div>
+            <div class="input-wrapper">
+              <label for="city">Cidade</label>
+              <input class="form-input" type="text" id="city" name="city" />
+            </div>
+            <div class="input-wrapper">
+              <label for="state">Estado</label>
+              <select id="state">
+                <option value="acre">Acre</option>
+                <option value="alagoas">Alagoas</option>
+                <option value="amapa">Amapá</option>
+                <option value="amazonas">Amazonas</option>
+                <option value="bahia">Bahia</option>
+                <option value="ceara">Ceará</option>
+                <option value="distrito-federal">Distrito Federal</option>
+                <option value="espirito-santo">Espírito Santo</option>
+                <option value="goias">Goiás</option>
+                <option value="maranhao">Maranhão</option>
+                <option value="mato-grosso">Mato Grosso</option>
+                <option value="mato-grosso-do-sul">Mato Grosso do Sul</option>
+                <option value="minas-gerais">Minas Gerais</option>
+                <option value="para">Pará</option>
+                <option value="paraiba">Paraíba</option>
+                <option value="parana">Paraná</option>
+                <option value="pernambuco">Pernambuco</option>
+                <option value="piaui">Piauí</option>
+                <option value="rio-de-janeiro">Rio de Janeiro</option>
+                <option value="rio-grande-do-norte">Rio Grande do Norte</option>
+                <option value="rio-grande-do-sul">Rio Grande do Sul</option>
+                <option value="rondonia">Rondônia</option>
+                <option value="roraima">Roraima</option>
+                <option value="santa-catarina">Santa Catarina</option>
+                <option value="sao-paulo">São Paulo</option>
+                <option value="sergipe">Sergipe</option>
+                <option value="tocantins">Tocantins</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-section">
+            <h3 class="subtitle section-title">Dados profissinais</h3>
+            <div class="form-sub-section">
+              <h3 class="subtitle">Natureza do Cargo</h3>
+              <div class="radio-wrapper">
+                <input
+                  type="radio"
+                  name="role"
+                  id="management"
+                  value="management" />
+                <label for="management">Gerência</label>
+              </div>
+              <div class="radio-wrapper">
+                <input
+                  type="radio"
+                  name="role"
+                  id="financial"
+                  value="financial" />
+                <label for="financial">Financeiro</label>
+              </div>
+              <div class="radio-wrapper">
+                <input
+                  type="radio"
+                  name="role"
+                  id="reception"
+                  value="reception" />
+                <label for="reception">Recepção</label>
+              </div>
+              <div class="radio-wrapper">
+                <input
+                  type="radio"
+                  name="role"
+                  id="administrative"
+                  value="administrative" />
+                <label for="administrative">Administrativo</label>
+              </div>
+              <div class="radio-wrapper">
+                <input type="radio" name="role" id="legal" value="legal" />
+                <label for="legal">Jurídico</label>
+              </div>
+            </div>
+            <div class="form-sub-section">
+              <h3 class="subtitle">Área de interesse</h3>
+              <div class="checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  name="area-of-interest"
+                  id="computing"
+                  value="computing" />
+                <label for="computing">Computação</label>
+              </div>
+              <div class="checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  name="area-of-interest"
+                  id="biology"
+                  value="biology" />
+                <label for="biology">Biologia</label>
+              </div>
+              <div class="checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  name="area-of-interest"
+                  id="environment"
+                  value="environment" />
+                <label for="environment">Meio Ambiente</label>
+              </div>
+              <div class="checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  name="area-of-interest"
+                  id="engineering"
+                  value="engineering" />
+                <label for="engineering">Engenharia</label>
+              </div>
+              <div class="checkbox-wrapper">
+                <input type="checkbox" name="story" id="story" value="story" />
+                <label for="story">História</label>
+              </div>
+            </div>
+          </div>
+          <div class="buttons-wrapper">
+            <button class="button submit" type="submit">Enviar</button>
+            <button class="button clear" type="reset">Limpar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
